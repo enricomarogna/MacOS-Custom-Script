@@ -39,12 +39,6 @@ tunnelblick \
 visual-studio-code \
 wireguard-go \
 wireguard-tools \
-zsh \
-zsh-autosuggestions \
-zsh-completions \
-zsh-fast-syntax-highlighting \
-zsh-history-substring-search \
-zsh-syntax-highlighting \
 zerotier-one
 
 # Installa i pacchetti da App Store (ID)
@@ -62,9 +56,6 @@ mas install \
 937984704 \
 441258766 \
 1451685025
-
-# Installa "Oh-My-Zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Aggiorna Homebrew e pulisce i pacchetti e le dipendenze non più necessarie (formula)
 # e controlla se ci sono errori (formula) e se ci sono aggiornamenti disponibili (App Store)
