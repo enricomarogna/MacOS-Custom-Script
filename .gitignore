@@ -1,3 +1,4 @@
 
 # BLACKLIST
 .DS_Store
+*.code-workspace
