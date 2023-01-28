@@ -16,6 +16,7 @@ affinity-designer \
 affinity-photo \
 affinity-publisher \
 balenaetcher \
+bat \
 bitwarden \
 bitwarden-cli \
 cyberduck \
