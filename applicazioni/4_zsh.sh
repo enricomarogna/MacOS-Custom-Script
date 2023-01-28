@@ -22,33 +22,25 @@ fi
 # Controlla se il plugin zsh-autosuggestions è installato
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]; then
   echo "zsh-autosuggestions non è installato. Inizio installazione..."
-  brew install zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
 # Controlla se il plugin zsh-completions è installato
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-completions ]; then
   echo "zsh-completions non è installato. Inizio installazione..."
-  brew install zsh-completions
-fi
-
-# Controlla se il plugin zsh-fast-syntax-highlighting è installato
-if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-fast-syntax-highlighting ]; then
-  echo "zsh-fast-syntax-highlighting non è installato. Inizio installazione..."
-  brew install zsh-fast-syntax-highlighting
-fi
-
-# Controlla se il plugin zsh-history-substring-search è installato
-if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search ]; then
-  echo "zsh-history-substring-search non è installato. Inizio installazione..."
-  brew install zsh-history-substring-search
+  git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 fi
 
 # Controlla se il plugin zsh-syntax-highlighting è installato
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
   echo "zsh-syntax-highlighting non è installato. Inizio installazione..."
-  brew install zsh-syntax-highlighting
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
+  echo "zsh-syntax-highlighting non è installato. Inizio installazione..."
+  git clone https://github.com/rupa/z.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z
+fi
 
 # Controlla se la cartella per installare Powerlevel10k è presente altrimenti la crea
 if [ ! -d ~/.oh-my-zsh/custom/themes ]; then
