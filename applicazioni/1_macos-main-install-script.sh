@@ -57,6 +57,9 @@ mas install \
 441258766 \
 1451685025
 
+# Tap
+brew tap homebrew/cask-fonts
+
 # Aggiorna Homebrew e pulisce i pacchetti e le dipendenze non più necessarie (formula)
 # e controlla se ci sono errori (formula) e se ci sono aggiornamenti disponibili (App Store)
 brew update && brew upgrade && mas upgrade && brew autoremove && brew cleanup && brew doctor
