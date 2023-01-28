@@ -32,6 +32,7 @@ protonmail-bridge \
 protonvpn \
 signal \
 sonixd \
+speedtest-cli \
 syncthing \
 the-unarchiver \
 thunderbird \
