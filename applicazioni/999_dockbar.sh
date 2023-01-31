@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Un array con le applicazioni che voglio aggiungere alla Dockbar
-apps=("LibreWolf" "iTerm" "thunderbird" SPAZIO "Visual Studio Code" "sonixd")
+apps=("LibreWolf" "iTerm" "thunderbird" SPAZIO "Visual Studio Code" "Bitwarden" SPAZIO "signal" "whatsapp" "sonixd" SPAZIO)
 
 # 1. Accedo alla cartella dove sono salvate le preferenze
 cd ~/Library/Preferences
